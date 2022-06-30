@@ -1,10 +1,7 @@
 function getAlphabet(){
    
-    let abc = [];
-   for (let i = 'a'.charCodeAt(0); i <= 'z'.charCodeAt(0); i++) { 
-     abc.push(String.fromCharCode(i)) }
-    let ABC = abc.map(a => a.toUpperCase());
-    let array = '[' + ABC.join(', ') + ']';
-    return array;
+  let alpha = Array.from(Array(26)).map((e, i) => i + 65);
+  let alphabet = alpha.map((x) => String.fromCharCode(x));
+  return alphabet;
     
 }
